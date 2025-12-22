@@ -1,82 +1,128 @@
-/* ===== Global Reset ===== */
+/* ===== Global ===== */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
-/* ===== Body ===== */
 body {
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    background-color: #f3f4f6;
-    color: #1f2933;
-    line-height: 1.6;
-    padding: 20px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #e5e7eb;
 }
 
-/* ===== Main Container ===== */
-.container {
-    max-width: 900px;
+/* ===== Layout ===== */
+.wrapper {
+    max-width: 950px;
     margin: auto;
-    background: #ffffff;
-    padding: 40px 45px;
-    border-radius: 12px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    padding: 40px 20px;
 }
 
 /* ===== Header ===== */
-h1 {
-    font-size: 2.6rem;
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    font-size: 2.8rem;
     font-weight: 700;
-    margin-bottom: 8px;
-    color: #111827;
+    color: #f9fafb;
 }
 
-.contact-info {
+.subtitle {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    margin-top: 6px;
+}
+
+.contact {
+    margin-top: 12px;
     font-size: 14px;
-    color: #4b5563;
-    margin-bottom: 30px;
 }
 
-.contact-info a {
-    color: #2563eb;
+.contact a {
+    color: #38bdf8;
     text-decoration: none;
-    font-weight: 500;
 }
 
-.contact-info a:hover {
+.contact a:hover {
     text-decoration: underline;
 }
 
-/* ===== Sections ===== */
-.section {
-    margin-top: 35px;
+/* ===== Cards ===== */
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
 }
 
-h2 {
-    font-size: 1.45rem;
-    font-weight: 600;
-    color: #111827;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #2563eb;
-    display: inline-block;
-    padding-bottom: 6px;
+.card h2 {
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+    color: #38bdf8;
 }
 
-/* ===== Paragraphs ===== */
-p {
-    font-size: 15.5px;
-    color: #374151;
-    margin-bottom: 12px;
+/* ===== Jobs ===== */
+.job {
+    margin-bottom: 25px;
 }
 
-/* ===== Job Titles ===== */
-strong {
-    color: #111827;
-    font-weight: 600;
+.job h3 {
+    font-size: 1.1rem;
+    color: #f1f5f9;
+}
+
+.job span {
+    font-size: 13px;
+    color: #94a3b8;
 }
 
 /* ===== Lists ===== */
 ul {
+    margin-top: 12px;
+    padding-left: 18px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* ===== Tags (Skills & Certs) ===== */
+.tags {
     list-style: none;
-    margin-
+    padding-left: 0;
+}
+
+.tags li {
+    display: inline-block;
+    background: #0ea5e9;
+    color: #020617;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 6px 6px 0 0;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}
