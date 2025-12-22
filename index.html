@@ -5,122 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prabhjot Singh Riar | Cybersecurity Professional</title>
 
-    <!-- Google Font -->
+    <!-- ATS-friendly font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="wrapper">
+<main class="wrapper">
 
-    <!-- Header -->
-    <header class="header">
+    <!-- HEADER -->
+    <header class="header fade-in">
         <h1>Prabhjot Singh Riar</h1>
         <p class="subtitle">Cybersecurity & IT Operations Professional</p>
+
         <p class="contact">
-            📧 pjsriar@gmail.com &nbsp;|&nbsp;
-            📞 (647) 303-0687 &nbsp;|&nbsp;
+            pjsriar@gmail.com | (647) 303-0687 |
             <a href="https://www.linkedin.com/in/pjsriar/" target="_blank">LinkedIn</a>
         </p>
+
+        <!-- Download Button -->
+        <a class="download-btn" href="Prabhjot_Singh_Riar_Resume.pdf" download>
+            ⬇ Download Resume (PDF)
+        </a>
     </header>
 
-    <!-- Summary -->
-    <section class="card">
+    <!-- SUMMARY -->
+    <section class="card slide-up">
         <h2>Professional Summary</h2>
         <p>
-            Security-focused IT professional with hands-on experience in technical support, 
-            network troubleshooting, access control management, and SOC-aligned incident handling. 
-            Strong exposure to SIEM platforms, security frameworks, and enterprise infrastructure.
-            Adept at operating in high-volume environments with a growing focus on cybersecurity operations.
+            Detail-oriented cybersecurity and IT professional with experience in SOC-aligned
+            incident response, network troubleshooting, SIEM monitoring, and access control
+            management. Hands-on exposure to Splunk, QRadar, AWS security services, and
+            NIST-aligned response frameworks. Proven ability to operate in high-volume,
+            security-sensitive environments.
         </p>
     </section>
 
-    <!-- Experience -->
-    <section class="card">
+    <!-- EXPERIENCE -->
+    <section class="card slide-up">
         <h2>Experience</h2>
 
-        <div class="job">
+        <article class="job">
             <h3>Technical Support Consultant</h3>
             <span>Rogers Communications Inc. | 2022 – Present</span>
             <ul>
-                <li>Resolved 150+ weekly support cases involving network, device, and connectivity issues.</li>
-                <li>Performed first-level security incident triage and escalated threats using NIST-aligned playbooks.</li>
-                <li>Monitored logs, access activity, and system events for audit and forensic readiness.</li>
-                <li>Worked with authentication systems and enforced least-privilege access controls.</li>
-                <li>Maintained a 95% first-call resolution rate in high-pressure environments.</li>
+                <li>Investigated and resolved 150+ weekly network, device, and connectivity incidents.</li>
+                <li>Performed first-level security incident triage aligned with NIST response playbooks.</li>
+                <li>Monitored system logs, access events, and authentication activity.</li>
+                <li>Escalated anomalies and maintained audit-ready documentation.</li>
+                <li>Maintained a 95% first-call resolution rate.</li>
             </ul>
-        </div>
+        </article>
 
-        <div class="job">
+        <article class="job">
             <h3>Networking Technician</h3>
             <span>Bell Technical Solutions | 2021 – 2022</span>
             <ul>
-                <li>Installed and maintained fiber and copper networks across enterprise and residential clients.</li>
-                <li>Independently resolved complex telecom hardware and connectivity issues.</li>
-                <li>Improved average repair time by 20% while maintaining SLA compliance.</li>
+                <li>Installed and maintained fiber and copper network infrastructure.</li>
+                <li>Resolved complex telecom and connectivity issues independently.</li>
+                <li>Improved average repair time by 20%.</li>
             </ul>
-        </div>
-
-        <div class="job">
-            <h3>Business Analyst</h3>
-            <span>Techlive Solutions | 2018 – 2019</span>
-            <ul>
-                <li>Developed workflow charts and business requirements, improving efficiency by 25%.</li>
-                <li>Collaborated with cross-functional teams to reduce system redundancies.</li>
-            </ul>
-        </div>
+        </article>
     </section>
 
-    <!-- Education -->
-    <section class="card">
+    <!-- EDUCATION -->
+    <section class="card slide-up">
         <h2>Education</h2>
-        <p><strong>B.Tech – Computer Science Engineering</strong><br>Chandigarh Group of Colleges (2014 – 2018)</p>
-        <p><strong>Bachelor of Law</strong><br>KCL Institute of Law (2018 – 2021)</p>
+        <p><strong>B.Tech – Computer Science Engineering</strong> | 2014 – 2018</p>
+        <p><strong>Bachelor of Law</strong> | 2018 – 2021</p>
     </section>
 
-    <!-- Certifications -->
-    <section class="card">
+    <!-- CERTIFICATIONS -->
+    <section class="card slide-up">
         <h2>Certifications</h2>
         <ul class="tags">
             <li>CompTIA Security+</li>
             <li>ISO/IEC 27001 Lead Auditor</li>
-            <li>ISC2 – Certified in Cybersecurity</li>
+            <li>ISC2 Certified in Cybersecurity</li>
             <li>AWS Cloud Practitioner</li>
             <li>CCNA Networking</li>
         </ul>
     </section>
 
-    <!-- Skills -->
-    <section class="card">
+    <!-- SKILLS -->
+    <section class="card slide-up">
         <h2>Skills</h2>
         <ul class="tags">
             <li>SIEM (Splunk, QRadar)</li>
             <li>Incident Response</li>
             <li>NIST, OWASP, MITRE ATT&CK</li>
             <li>Network Security</li>
-            <li>Python & Bash</li>
             <li>AWS & Azure</li>
-            <li>Docker</li>
+            <li>Python & Bash</li>
             <li>Wireshark</li>
         </ul>
     </section>
 
-    <!-- Projects -->
-    <section class="card">
+    <!-- PROJECTS WITH SCREENSHOTS -->
+    <section class="card slide-up">
         <h2>Projects & Labs</h2>
-        <ul>
-            <li><strong>SOC Investigation Lab:</strong> Detected malicious logins, DNS tunneling, and endpoint compromise.</li>
-            <li><strong>AWS Security Lab:</strong> Configured IAM roles, S3 policies, and CloudTrail for incident tracking.</li>
-        </ul>
+
+        <div class="projects">
+            <div class="project">
+                <img src="images/soc-lab.png" alt="SOC Investigation Lab Dashboard">
+                <h4>SOC Investigation Lab</h4>
+                <p>Analyzed malicious logins, DNS tunneling, and endpoint compromise using Splunk and QRadar.</p>
+            </div>
+
+            <div class="project">
+                <img src="images/aws-security.png" alt="AWS Security Lab">
+                <h4>AWS Security Lab</h4>
+                <p>Configured IAM roles, S3 policies, and CloudTrail for incident detection.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>© 2025 Prabhjot Singh Riar</p>
     </footer>
 
-</div>
+</main>
 
 </body>
 </html>
