@@ -1,12 +1,8 @@
-/* ===== Global ===== */
-* {
-    box-sizing: border-box;
-}
-
+/* ===== Base ===== */
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #0f172a, #020617);
+    background: linear-gradient(135deg, #020617, #0f172a);
     color: #e5e7eb;
 }
 
@@ -25,19 +21,16 @@ body {
 
 .header h1 {
     font-size: 2.8rem;
-    font-weight: 700;
-    color: #f9fafb;
+    color: #f8fafc;
 }
 
 .subtitle {
-    font-size: 1.1rem;
     color: #94a3b8;
-    margin-top: 6px;
 }
 
 .contact {
-    margin-top: 12px;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 .contact a {
@@ -45,33 +38,60 @@ body {
     text-decoration: none;
 }
 
-.contact a:hover {
-    text-decoration: underline;
+/* ===== Download Button ===== */
+.download-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 20px;
+    background: #0ea5e9;
+    color: #020617;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(14,165,233,0.4);
 }
 
 /* ===== Cards ===== */
 .card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
     border-radius: 14px;
     padding: 28px;
     margin-bottom: 30px;
-    backdrop-filter: blur(10px);
 }
 
-.card h2 {
-    margin-bottom: 18px;
-    font-size: 1.4rem;
-    color: #38bdf8;
+/* ===== Animations ===== */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+.slide-up {
+    animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ===== Jobs ===== */
-.job {
-    margin-bottom: 25px;
-}
-
 .job h3 {
-    font-size: 1.1rem;
     color: #f1f5f9;
 }
 
@@ -82,16 +102,14 @@ body {
 
 /* ===== Lists ===== */
 ul {
-    margin-top: 12px;
     padding-left: 18px;
 }
 
 li {
     margin-bottom: 8px;
-    font-size: 15px;
 }
 
-/* ===== Tags (Skills & Certs) ===== */
+/* ===== Tags ===== */
 .tags {
     list-style: none;
     padding-left: 0;
@@ -104,25 +122,32 @@ li {
     padding: 7px 12px;
     border-radius: 20px;
     font-size: 13px;
-    font-weight: 500;
     margin: 6px 6px 0 0;
+}
+
+/* ===== Projects ===== */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 /* ===== Footer ===== */
 footer {
     text-align: center;
-    margin-top: 50px;
     font-size: 13px;
     color: #64748b;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 700px) {
-    .header h1 {
-        font-size: 2.2rem;
-    }
-
-    .card {
-        padding: 22px;
-    }
+    margin-top: 50px;
 }
